@@ -1,0 +1,29 @@
+.hero {
+
+  &__content_box {
+    margin-top: 30px;
+
+    @mixin atSmall {
+      width: 100%;
+      position: absolute;
+      bottom: 20px;
+    }
+  }
+
+  &__title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    text-align: center;
+    max-width: 12.25rem;
+    margin: 0 auto 8px;
+    color: $darkBlue;
+    line-height: 1.2;
+
+    @mixin atSmall {
+      margin: 0 auto 30px;
+      max-width: 54.375rem;
+      font-size: 5.75rem;
+
+    }
+  }
+}

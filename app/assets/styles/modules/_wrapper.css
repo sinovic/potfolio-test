@@ -1,0 +1,13 @@
+.wrapper {
+  max-width: 1440px;
+  margin: 0 auto;
+
+
+  &--full-height {
+
+    @mixin atSmall {
+      height: 90vh;
+      position: relative;
+    }
+  }
+}

@@ -460,9 +460,59 @@ template {
 body {
   font-family: 'Poppins', sans-serif;
   color: #454545;
+  min-width: 320px;
 }
 
 img {
   max-width: 100%;
   height: auto;
 }
+
+.wrapper {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+
+.wrapper--full-height {
+      height: 90vh;
+      position: relative
+  }
+  }
+
+.page-section {
+  padding: 4.5rem 0;
+}
+
+.hero__content_box {
+    margin-top: 30px;
+  }
+
+@media (min-width: 768px) {
+
+.hero__content_box {
+      width: 100%;
+      position: absolute;
+      bottom: 20px
+  }
+  }
+
+.hero__title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    text-align: center;
+    max-width: 12.25rem;
+    margin: 0 auto 8px;
+    color: #01030F;
+    line-height: 1.2;
+  }
+
+@media (min-width: 768px) {
+
+.hero__title {
+      margin: 0 auto 30px;
+      max-width: 54.375rem;
+      font-size: 5.75rem
+  }
+  }
