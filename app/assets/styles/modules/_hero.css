@@ -1,29 +1,60 @@
 .hero {
+  width: 100%;
+  max-height: 50.25rem;
 
   &__content_box {
+    width: 100%;
     margin-top: 30px;
 
     @mixin atSmall {
-      width: 100%;
-      position: absolute;
-      bottom: 20px;
+      margin-top: 80px;
     }
+
+    @mixin atMedium {
+      margin-top: 120px;
+    }
+
+    @mixin atLarge {
+      margin-top: 0;
+      position: absolute;
+      bottom: 10px;
+    }
+
   }
 
   &__title {
-    font-size: 1.25rem;
+    font-size: 1.75rem;
     font-weight: 600;
     text-align: center;
-    max-width: 12.25rem;
-    margin: 0 auto 8px;
+    max-width: 17.5rem;
+    margin: 0 auto 6px;
     color: $darkBlue;
-    line-height: 1.2;
 
     @mixin atSmall {
-      margin: 0 auto 30px;
-      max-width: 54.375rem;
-      font-size: 5.75rem;
-
+      margin: 0 auto 5px;
+      max-width: 25rem;
+      font-size: 2.5rem;
     }
+
+    @mixin atMedium {
+      margin: 0 auto 5px;
+      max-width: 37.5rem;
+      font-size: 3.75rem;
+    }
+
+    @mixin atLarge {
+      margin: 0 auto 5px;
+      max-width: 47.5rem;
+      font-size: 4.75rem;
+    }
+
+    @mixin atXlarge {
+      margin: 0 auto 5px;
+      max-width: 58rem;
+      font-size: 5.8rem;
+    }
+  }
+
+  &__image {
   }
 }
