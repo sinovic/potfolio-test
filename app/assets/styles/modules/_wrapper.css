@@ -2,6 +2,8 @@
   margin: 0 auto;
   padding: 0 19px;
 
+  @mixin clearfix;
+
 
   @mixin atSmall {
     padding: 0 18px;
@@ -20,8 +22,7 @@
 
   @mixin atXlarge {
     padding: 0;
-    max-width: 1440px;
-
+    max-width: 1200px;
   }
 
   &--full-height {
@@ -34,7 +35,8 @@
     }
 
     @mixin atXlarge {
-      max-height: calc(100vh - 100px);
+      min-height: 800px;
+      max-height: none;
     }
   }
 

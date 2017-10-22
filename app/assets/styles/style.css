@@ -6,3 +6,7 @@
 @import "modules/_page-section";
 @import "modules/_hero";
 @import "modules/_header";
+@import "modules/_headline";
+@import "modules/_row";
+@import "modules/_about";
+@import "modules/_text-content";

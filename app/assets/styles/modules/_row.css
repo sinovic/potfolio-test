@@ -1,0 +1,46 @@
+.row {
+  @mixin clearfix;
+
+  &--side-margin {
+    margin: 0 20px;
+  }
+
+  @mixin atLarge {
+
+    &--gutters > div {
+      padding-right: 35px;
+    }
+
+    &--gutters > div:last-of-type {
+      padding-right: 0;
+    }
+
+    &__large-5 {
+      float: left;
+      width: 41.66%;
+    }
+
+    &__large-7 {
+      float: left;
+      width: 58.34%;
+    }
+  }
+
+  @mixin atXlarge {
+
+    &--gutters > div {
+      padding-right: 65px;
+    }
+
+    &--gutters > div:last-of-type {
+      padding-right: 0;
+    }
+
+
+    &__xlarge-6 {
+      float: left;
+      width: 50%;
+
+    }
+  }
+}

@@ -1,0 +1,31 @@
+.about {
+
+  & img{
+    display: block;
+  }
+
+  &__image {
+    display: block;
+    margin: 0 auto;
+
+    &--smaller {
+      max-width: 350px;
+
+      @mixin atSmall {
+        max-width: 460px;
+      }
+
+      @mixin atMedium {
+        max-width: 546px;
+      }
+
+      @mixin atLarge {
+        border: 15px solid $mainBlue;
+        padding: 0;
+        max-width: none;
+      }
+    }
+  }
+
+
+}

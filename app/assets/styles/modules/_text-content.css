@@ -1,0 +1,56 @@
+.text-content {
+  p {
+    font-size: 1.05rem;
+    font-weight: 100;
+    line-height: 1.5;
+    text-align: justify;
+    margin-bottom: 30px;
+
+    @mixin atSmall {
+      font-size: 1.25rem;
+      font-weight: 100;
+      line-height: 1.5;
+      text-align: justify;
+      margin-bottom: 30px;
+    }
+
+    @mixin atMedium {
+      font-size: 1.375rem;
+      font-weight: 100;
+      line-height: 1.5;
+      text-align: justify;
+    }
+
+    @mixin atLarge {
+      font-size: 1.25rem;
+      font-weight: 100;
+      line-height: 1.5;
+      text-align: justify;
+    }
+
+    @mixin atXlarge {
+      font-size: 1.375rem;
+      font-weight: 100;
+      line-height: 1.5;
+      text-align: justify;
+    }
+  }
+
+  &__icons img {
+    display: inline-block;
+    padding-right: 20px;
+  }
+
+
+  &--narrow {
+
+    @mixin atMedium {
+      margin: 0 auto;
+      max-width: 46rem;
+    }
+
+    @mixin atLarge {
+      max-width: 36rem;
+    }
+  }
+}
