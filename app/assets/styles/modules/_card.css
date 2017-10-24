@@ -1,0 +1,69 @@
+.card {
+  min-height: 28rem;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+
+  @mixin atSmall {
+    flex-flow: row wrap;
+    max-width: 48.75rem;
+  }
+
+  @mixin atLarge {
+    max-width: 56rem;
+  }
+
+  &-col {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-content: space-between;
+    flex-basis: 100%;
+    width: 94%;
+    margin: 0 auto;
+
+    @mixin atSmall {
+      flex-flow: row wrap;
+    }
+
+    &:first-of-type {
+      @mixin atLarge {
+        flex-basis: 59%;
+        margin: 0;
+      }
+    }
+
+    &:last-of-type {
+
+      @mixin atSmall {
+        margin-top: 1.5%;
+      }
+
+      @mixin atLarge {
+        flex-flow: column wrap;
+        flex-basis: 40%;
+        margin: 0;
+      }
+    }
+  }
+
+  &__item {
+    display: flex;
+    background-color: #E8E8E8;
+    border-radius: 8px;
+    justify-content: center;
+    align-items: center;
+    height: 250px;
+    margin-bottom: 10px;
+
+    @mixin atSmall {
+      margin-bottom: 0;
+    }
+
+    &__title {
+      font-size: 1.2rem;
+      font-weight: 300;
+    }
+  }
+}

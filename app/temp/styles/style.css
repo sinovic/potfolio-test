@@ -468,6 +468,14 @@ img {
   height: auto;
 }
 
+.center {
+  text-align: center;
+}
+
+.justify {
+  text-align: justify;
+}
+
 .wrapper {
   margin: 0 auto;
   padding: 0 19px;
@@ -548,7 +556,7 @@ img {
 @media (min-width: 992px) {
 
 .page-section {
-    padding: 12.5rem 0
+    padding: 12.5rem 0 6rem
 }
   }
 
@@ -744,18 +752,6 @@ img {
 }
   }
 
-.headline--centred {
-      text-align: center;
-  }
-
-@media (min-width: 992px) {
-
-.headline--centred {
-
-      text-align: left
-  }
-  }
-
 .headline--t-margin {
     margin-top: .7rem;
   }
@@ -827,6 +823,17 @@ img {
     display: block;
   }
 
+.about__full-name {
+    text-align: center;
+  }
+
+@media (min-width: 992px) {
+
+.about__full-name {
+      text-align: left
+  }
+  }
+
 .about__image {
     display: block;
     margin: 0 auto;
@@ -863,48 +870,34 @@ img {
     font-size: 1.05rem;
     font-weight: 100;
     line-height: 1.5;
-    text-align: justify;
     margin-bottom: 30px;
   }
 
 @media (min-width: 576px) {
 
 .text-content p {
-      font-size: 1.25rem;
-      font-weight: 100;
-      line-height: 1.5;
-      text-align: justify;
-      margin-bottom: 30px
+      font-size: 1.25rem
   }
   }
 
 @media (min-width: 768px) {
 
 .text-content p {
-      font-size: 1.375rem;
-      font-weight: 100;
-      line-height: 1.5;
-      text-align: justify
+      font-size: 1.375rem
   }
   }
 
 @media (min-width: 992px) {
 
 .text-content p {
-      font-size: 1.25rem;
-      font-weight: 100;
-      line-height: 1.5;
-      text-align: justify
+      font-size: 1.25rem
   }
   }
 
 @media (min-width: 1200px) {
 
 .text-content p {
-      font-size: 1.375rem;
-      font-weight: 100;
-      line-height: 1.5;
-      text-align: justify
+      font-size: 1.375rem
   }
   }
 
@@ -925,5 +918,245 @@ img {
 
 .text-content--narrow {
       max-width: 36rem
+  }
+  }
+
+.text-content--smaller {
+    margin: 0 auto;
+    max-width: 21.25rem;
+
+  }
+
+@media (min-width: 576px) {
+
+.text-content--smaller {
+      max-width: 25rem
+
+  }
+  }
+
+@media (min-width: 768px) {
+
+.text-content--smaller {
+      max-width: 27.5rem
+
+  }
+  }
+
+@media (min-width: 992px) {
+
+.text-content--smaller {
+      max-width: 30rem
+
+  }
+  }
+
+.text-content--centred {
+    text-align: center;
+  }
+
+.text-content--justified {
+    text-align: justify;
+  }
+
+.portfolio {
+  //background-color: yellow;
+}
+
+.card {
+  min-height: 28rem;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media (min-width: 576px) {
+
+.card {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    max-width: 48.75rem
+}
+  }
+
+@media (min-width: 992px) {
+
+.card {
+    max-width: 56rem
+}
+  }
+
+.card-col {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-line-pack: justify;
+        align-content: space-between;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    width: 94%;
+    margin: 0 auto;
+  }
+
+@media (min-width: 576px) {
+
+.card-col {
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-flow: row wrap;
+              flex-flow: row wrap
+  }
+  }
+
+@media (min-width: 992px) {
+
+.card-col:first-of-type {
+        -ms-flex-preferred-size: 59%;
+            flex-basis: 59%;
+        margin: 0
+    }
+  }
+
+@media (min-width: 576px) {
+
+.card-col:last-of-type {
+        margin-top: 1.5%
+    }
+  }
+
+@media (min-width: 992px) {
+
+.card-col:last-of-type {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-flow: column wrap;
+                flex-flow: column wrap;
+        -ms-flex-preferred-size: 40%;
+            flex-basis: 40%;
+        margin: 0
+    }
+  }
+
+.card__item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background-color: #E8E8E8;
+    border-radius: 8px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 250px;
+    margin-bottom: 10px;
+  }
+
+@media (min-width: 576px) {
+
+.card__item {
+      margin-bottom: 0
+  }
+  }
+
+.card__item__title {
+      font-size: 1.2rem;
+      font-weight: 300;
+    }
+
+@media (min-width: 576px) {
+    .project-1,
+    .project-2,
+    .project-3,
+    .project-4 {
+      height: 250px;
+    }
+
+    .project-1 {
+      -ms-flex-preferred-size: 60%;
+          flex-basis: 60%;
+    }
+
+    .project-2 {
+      -ms-flex-preferred-size: 38%;
+          flex-basis: 38%;
+    }
+
+    .project-3 {
+      -ms-flex-preferred-size: 100%;
+          flex-basis: 100%;
+      height: 300px;
+      margin-top: 1.55%;
+    }
+
+    .project-4 {
+      -ms-flex-preferred-size: 38%;
+          flex-basis: 38%;
+    }
+
+    .project-5 {
+      -ms-flex-preferred-size: 60%;
+          flex-basis: 60%;
+    }
+
+    @media (min-width: 992px) {
+      .project-1,
+      .project-2 {
+        height: 42%;
+      }
+
+      .project-1 {
+        -ms-flex-preferred-size: 56%;
+            flex-basis: 56%;
+      }
+
+      .project-2 {
+        -ms-flex-preferred-size: 42%;
+            flex-basis: 42%;
+      }
+
+      .project-3 {
+        -ms-flex-preferred-size: 100%;
+            flex-basis: 100%;
+        height: 56%;
+        -ms-flex-item-align: end;
+            align-self: flex-end;
+      }
+
+      .project-4,
+      .project-5 {
+        -ms-flex-preferred-size: 40%;
+            flex-basis: 40%;
+      }
+
+      .project-4 {
+        height: 56%;
+        -ms-flex-preferred-size: 56%;
+            flex-basis: 56%;
+      }
+
+      .project-5 {
+        height: 42%;
+        -ms-flex-preferred-size: 42%;
+            flex-basis: 42%;
+      }
   }
   }

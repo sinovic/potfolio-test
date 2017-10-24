@@ -4,6 +4,14 @@
     display: block;
   }
 
+  &__full-name {
+    text-align: center;
+
+    @mixin atLarge {
+      text-align: left;
+    }
+  }
+
   &__image {
     display: block;
     margin: 0 auto;
