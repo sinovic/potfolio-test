@@ -96,21 +96,32 @@
     </div>
 </section>
 
-<section class="contact">
-    <div class="map"></div>
-    <h2>Speak to me.</h2>
-    <p>To talk about a project or brief, an open position, or to simply get in touch, please enter your details below.</p>
-    <form action="#" method="post">
-        <input type="text">
-        <input type="text">
-        <textarea name=""
-                  id=""
-                  cols="30"
-                  rows="10"></textarea>
-    </form>
+<section class="contact page-section">
+    <div class="wrapper">
+        <div class="row row--gutters">
+            <div class="row__large-6">
+                <div class="contact__map"></div>
+            </div>
+            <div class="row__large-6 mt4">
+                <h2 class="headline headline--b-margin">Speak to me.</h2>
+                <div class="text-content">
+                    <p>To talk about a project or brief, an open position, or to simply get in touch, please enter your details below.</p>
+                </div>
+                
+                <form class="contact__form" action="#" method="post">
+                    <input type="text" name="name" placeholder="Your Name">
+                    <input class="mt2" type="email" name="email" placeholder="Your Email">
+                    <div class="contact__form__msg mt2">
+                        <textarea name="message" placeholder="Your Message"></textarea>
+                        <img src="assets/images/icons/send.svg"
+                             alt="Send icon">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
 </section>
-<footer>
-    <div class="social"><span></span><span></span><span></span><span></span></div>
-    <p>@ Yassine Meftah</p>
+<footer class="footer center">
+    <p>&copy; 2017 Yassine Meftah. All right Reserved.</p>
 </footer>
 </body>

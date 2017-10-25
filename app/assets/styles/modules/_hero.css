@@ -4,18 +4,17 @@
 
   &__content_box {
     width: 100%;
-    margin-top: 50px;
+    margin-top: 90px;
 
     @mixin atSmall {
-      margin-top: 80px;
-    }
-
-    @mixin atMedium {
       margin-top: 120px;
     }
 
-    @mixin atLarge {
+    @mixin atMedium {
       margin-top: 150px;
+    }
+
+    @mixin atLarge {
       position: absolute;
       bottom: 10px;
     }

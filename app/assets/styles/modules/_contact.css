@@ -1,0 +1,62 @@
+.contact {
+
+  &__map {
+    width: 100%;
+    height: 520px;
+    background-color: #E8E8E8;
+  }
+
+  &__form {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+
+    input,
+    textarea {
+      border: none;
+      border-bottom: 1px solid $uiMain;
+      font-size: 1.175rem;
+      line-height: 1.5;
+      font-weight: 100;
+    }
+
+    input:focus,
+    textarea:focus {
+      outline: none;
+      border-bottom: 2px solid $uiFocus;
+    }
+
+    input::placeholder,
+    textarea::placeholder {
+      font-size: 1rem
+    }
+
+    input {
+      width: 100%;
+      height: 34px;
+      padding-left: 5px;
+
+      @mixin atSmall {
+        width: 48%;
+      }
+    }
+
+    textarea {
+      margin-top: 30px;
+      width: 100%;
+      height: 250px;
+      resize: none;
+    }
+
+    &__msg {
+      width: 100%;
+      position: relative;
+
+      img {
+        position: absolute;
+        right: 10px;
+        bottom: 20px;
+      }
+    }
+  }
+}
