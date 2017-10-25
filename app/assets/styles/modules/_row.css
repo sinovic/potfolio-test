@@ -26,7 +26,7 @@
     }
   }
 
-  @mixin atXlarge {
+  @mixin atLarge {
 
     &--gutters > div {
       padding-right: 65px;
@@ -37,10 +37,28 @@
     }
 
 
-    &__xlarge-6 {
+    &__large-6 {
       float: left;
       width: 50%;
 
     }
   }
+
+  @mixin atXlarge {
+
+  &--gutters > div {
+    padding-right: 65px;
+  }
+
+  &--gutters > div:last-of-type {
+    padding-right: 0;
+  }
+
+
+  &__xlarge-6 {
+    float: left;
+    width: 50%;
+
+  }
+}
 }

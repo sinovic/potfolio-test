@@ -468,6 +468,34 @@ img {
   height: auto;
 }
 
+.mt4 {
+  margin-top: 4rem;
+
+}
+
+@media (min-width: 992px) {
+
+.mt4 {
+    margin-top: 0
+
+}
+  }
+
+.mt2 {
+  margin-top: 2rem;
+}
+
+@media (min-width: 576px) {
+
+.mt2 {
+    margin-top: 0
+}
+  }
+
+.margin {
+  margin: auto;
+}
+
 .center {
   text-align: center;
 }
@@ -515,15 +543,6 @@ img {
 }
   }
 
-@media (min-width: 1200px) {
-
-.wrapper {
-    padding: 0;
-    max-width: 1200px
-
-}
-  }
-
 @media (min-width: 992px) {
 
 .wrapper--full-height {
@@ -543,20 +562,16 @@ img {
   }
 
 .page-section {
-  padding: 6.5rem 0;
+  padding: 13rem 0 0;
+  padding: 13rem 0 0;
+
 }
 
 @media (min-width: 768px) {
 
 .page-section {
-    padding: 10.5rem 0
-}
-  }
+    padding: 25rem 0 0
 
-@media (min-width: 992px) {
-
-.page-section {
-    padding: 12.5rem 0 6rem
 }
   }
 
@@ -566,19 +581,11 @@ img {
 
 .hero__content_box {
     width: 100%;
-    margin-top: 50px;
+    margin-top: 90px;
 
   }
 
 @media (min-width: 576px) {
-
-.hero__content_box {
-      margin-top: 80px
-
-  }
-  }
-
-@media (min-width: 768px) {
 
 .hero__content_box {
       margin-top: 120px
@@ -586,10 +593,17 @@ img {
   }
   }
 
+@media (min-width: 768px) {
+
+.hero__content_box {
+      margin-top: 150px
+
+  }
+  }
+
 @media (min-width: 992px) {
 
 .hero__content_box {
-      margin-top: 150px;
       position: absolute;
       bottom: 10px
 
@@ -729,12 +743,14 @@ img {
   font-size: 1.8rem;
   font-weight: 600;
   margin: 0;
+
 }
 
 @media (min-width: 576px) {
 
 .headline {
     font-size: 2.5rem
+
 }
   }
 
@@ -742,6 +758,7 @@ img {
 
 .headline {
     font-size: 3rem
+
 }
   }
 
@@ -749,6 +766,7 @@ img {
 
 .headline {
     font-size: 2.75rem
+
 }
   }
 
@@ -801,7 +819,7 @@ img {
     }
   }
 
-@media (min-width: 1200px) {
+@media (min-width: 992px) {
 
     .row--gutters > div {
       padding-right: 65px;
@@ -812,11 +830,29 @@ img {
     }
 
 
-    .row__xlarge-6 {
+    .row__large-6 {
       float: left;
       width: 50%;
 
     }
+  }
+
+@media (min-width: 1200px) {
+
+  .row--gutters > div {
+    padding-right: 65px;
+  }
+
+  .row--gutters > div:last-of-type {
+    padding-right: 0;
+  }
+
+
+  .row__xlarge-6 {
+    float: left;
+    width: 50%;
+
+  }
   }
 
 .about img{
@@ -1160,3 +1196,93 @@ img {
       }
   }
   }
+
+.contact__map {
+    width: 100%;
+    height: 520px;
+    background-color: #E8E8E8;
+  }
+
+.contact__form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+
+.contact__form input,
+    .contact__form textarea {
+      border: none;
+      border-bottom: 1px solid #dfe3e6;
+      font-size: 1.175rem;
+      line-height: 1.5;
+      font-weight: 100;
+    }
+
+.contact__form input:focus,
+    .contact__form textarea:focus {
+      outline: none;
+      border-bottom: 2px solid #8c9ba5;
+    }
+
+.contact__form input::-webkit-input-placeholder,
+    .contact__form textarea::-webkit-input-placeholder {
+      font-size: 1rem
+    }
+
+.contact__form input:-ms-input-placeholder,
+    .contact__form textarea:-ms-input-placeholder {
+      font-size: 1rem
+    }
+
+.contact__form input::-ms-input-placeholder,
+    .contact__form textarea::-ms-input-placeholder {
+      font-size: 1rem
+    }
+
+.contact__form input::placeholder,
+    .contact__form textarea::placeholder {
+      font-size: 1rem
+    }
+
+.contact__form input {
+      width: 100%;
+      height: 34px;
+      padding-left: 5px;
+    }
+
+@media (min-width: 576px) {
+
+.contact__form input {
+        width: 48%
+    }
+  }
+
+.contact__form textarea {
+      margin-top: 30px;
+      width: 100%;
+      height: 250px;
+      resize: none;
+    }
+
+.contact__form__msg {
+      width: 100%;
+      position: relative;
+    }
+
+.contact__form__msg img {
+        position: absolute;
+        right: 10px;
+        bottom: 20px;
+      }
+
+.footer {
+  font-weight: 100;
+  padding: 50px 0 5px;
+}

@@ -1,7 +1,6 @@
 .wrapper {
   margin: 0 auto;
   padding: 0 19px;
-
   @mixin clearfix;
 
 
@@ -18,11 +17,6 @@
   @mixin atLarge {
     padding: 0;
     max-width: 1100px;
-  }
-
-  @mixin atXlarge {
-    padding: 0;
-    max-width: 1200px;
   }
 
   &--full-height {

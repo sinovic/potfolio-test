@@ -1,0 +1,20 @@
+.mt4 {
+  margin-top: 4rem;
+
+  @mixin atLarge {
+    margin-top: 0;
+  }
+
+}
+
+.mt2 {
+  margin-top: 2rem;
+
+  @mixin atSmall {
+    margin-top: 0;
+  }
+}
+
+.margin {
+  margin: auto;
+}
